@@ -1,0 +1,15 @@
+//
+//  SupabaseClient.swift
+//  Kira
+//
+//  Created by Karyna Budi Sanjaya on 19/10/26.
+//
+
+import Foundation
+
+import Supabase
+
+let supabase = SupabaseClient(
+  supabaseURL: URL(string: "")!,
+  supabaseKey: ""
+)
