@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		92F4740C30860DAC00CFFC41 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 92F4740B30860DAC00CFFC41 /* Auth */; };
+		92F4740E30860DAC00CFFC41 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 92F4740D30860DAC00CFFC41 /* Functions */; };
+		92F4741030860DAC00CFFC41 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 92F4740F30860DAC00CFFC41 /* PostgREST */; };
+		92F4741230860DAC00CFFC41 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 92F4741130860DAC00CFFC41 /* Realtime */; };
+		92F4741430860DAC00CFFC41 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 92F4741330860DAC00CFFC41 /* Storage */; };
+		92F4741630860DAC00CFFC41 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 92F4741530860DAC00CFFC41 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		92F473CB3080A1A100CFFC41 /* Kira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F4741030860DAC00CFFC41 /* PostgREST in Frameworks */,
+				92F4740E30860DAC00CFFC41 /* Functions in Frameworks */,
+				92F4741630860DAC00CFFC41 /* Supabase in Frameworks */,
+				92F4740C30860DAC00CFFC41 /* Auth in Frameworks */,
+				92F4741430860DAC00CFFC41 /* Storage in Frameworks */,
+				92F4741230860DAC00CFFC41 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,12 @@
 			);
 			name = Kira;
 			packageProductDependencies = (
+				92F4740B30860DAC00CFFC41 /* Auth */,
+				92F4740D30860DAC00CFFC41 /* Functions */,
+				92F4740F30860DAC00CFFC41 /* PostgREST */,
+				92F4741130860DAC00CFFC41 /* Realtime */,
+				92F4741330860DAC00CFFC41 /* Storage */,
+				92F4741530860DAC00CFFC41 /* Supabase */,
 			);
 			productName = Kira;
 			productReference = 92F473CB3080A1A100CFFC41 /* Kira.app */;
@@ -94,6 +115,9 @@
 			);
 			mainGroup = 92F473C23080A1A100CFFC41;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 92F473CC3080A1A100CFFC41 /* Products */;
 			projectDirPath = "";
@@ -332,6 +356,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92F4740B30860DAC00CFFC41 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		92F4740D30860DAC00CFFC41 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		92F4740F30860DAC00CFFC41 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		92F4741130860DAC00CFFC41 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		92F4741330860DAC00CFFC41 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		92F4741530860DAC00CFFC41 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92F4740A30860DAC00CFFC41 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92F473C33080A1A100CFFC41 /* Project object */;
 }
