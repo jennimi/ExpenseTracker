@@ -1,3 +1,26 @@
-Kira — Project Plan & Progress Tracker.md
-Kiro - Role.md
-PrevChat.md
+# Secrets & Environment
+Kira/Core/SupabaseClient.swift
+.env
+.env.local
+
+# Xcode
+.DS_Store
+*.xcuserstate
+xcuserdata/
+DerivedData/
+*.xcworkspace/xcuserdata
+Build/
+
+# Swift Package Manager
+.swiftpm/
+*.resolved
+
+# Local project files
+/support files
+supabase/.temp/
+supabase/.temp/
+.DS_Store
+*.xcuserstate
+xcuserdata/
+DerivedData/
+.swiftpm/
